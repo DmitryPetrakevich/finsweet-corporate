@@ -1,0 +1,101 @@
+.hero {
+    position: relative;
+    background-image: url("../../../assets//images/hero/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 130px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+    height: 720px;
+    max-width: 900px;
+    padding-top: 120px;
+    padding-left: 80px; 
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -2px;
+}
+
+.subTitle {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.subTitleStartup {
+    font-family: var(--font-primary);
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.title {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.date {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    max-width: 600px;
+    margin-bottom: 48px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 204px;
+    height: 56px;
+    padding: 16px 48px;
+    background-color: #FFD050;
+    border: none;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.btn:hover {
+    background-color: #EDC14A;
+}

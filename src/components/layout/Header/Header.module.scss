@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #232536;
+    width: 100%;
+    height: 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 85px;
+}
+
+.logo {
+    color: #FFFFFF;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    gap: 25px;
+}
+
+.navBtn {
+    font-family: Inner;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    border: none;
+    font-family: var(--font-primary);
+    background: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.navBtn:hover {
+    color: #adaeb0;
+}
+
+.rightBlock {
+    display:  flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.btnSub {
+    width: 179px;
+    height: 56px;
+    top: 12px;
+    left: 1181px;
+    padding: 16px 48px;
+    background-color: #FFFFFF;
+    font-weight: 700;
+    font-family: var(--font-primary);
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #232536;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btnSub:hover {
+    background-color: #FFD050;
+}

@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 25px 32px;
+    box-sizing: 3px;
+}
+
+.primary {
+    background-color: #FBF6EA;
+}
+
+.date {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #4C4C4C;
+
+}
+
+.title {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #232536;
+    max-width: 370px;
+}

@@ -1,0 +1,24 @@
+.allPosts {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+    max-width: 725px;
+    border: 1px solid #6D6E76;
+    border-radius: 3px;
+}
+
+.title {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #232536;
+    margin-bottom: 32px;
+}
