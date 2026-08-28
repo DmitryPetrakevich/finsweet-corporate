@@ -16,7 +16,7 @@ function SpecialPost() {
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
                     </p>
 
-                    <Button type="primary" >
+                    <Button type="primary" className={styles.specialButton} >
                         Discover our story &gt;
                     </Button>
 

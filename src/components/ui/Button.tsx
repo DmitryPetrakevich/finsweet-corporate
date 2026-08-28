@@ -3,12 +3,13 @@ import styles from "./Button.module.scss"
 interface ButtonProps {
     type: string,
     children: any
+    className?: string
 }
 
 
-function Button({type, children}: ButtonProps) {
+function Button({type, children, className}: ButtonProps) {
     return (
-        <button className={`${styles.btn} ${styles[type]}`}>
+        <button className={`${styles.btn} ${styles[type]} ${className || ""}`}>
             {children}
         </button>
     )
