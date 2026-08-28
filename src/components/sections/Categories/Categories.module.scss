@@ -1,16 +1,13 @@
-.allPosts {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.categories {
+    width: 100%;
+    padding: 0 80px;
+    margin-bottom: 125px;
 }
 
-.wrapper {
+.container {
     display: flex;
     flex-direction: column;
-    padding: 0 32px;
-    max-width: 725px;
-    max-height: 735px;
-    border-radius: 3px;
+    gap: 48px;
 }
 
 .title {
@@ -20,5 +17,11 @@
     line-height: 48px;
     letter-spacing: -2px;
     color: #232536;
-    margin-bottom: 32px;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
 }

@@ -1,4 +1,5 @@
 import styles from "./FeaturedPost.module.scss"
+import Button from "../../../ui/Button"
 
 function FeaturedPost() {
     return (
@@ -14,6 +15,10 @@ function FeaturedPost() {
                     <p className={styles.infoTitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 
                     <p className={styles.infoSubtitle}>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+
+                    <Button type="primary">
+                        Read More &gt;
+                    </Button>
                 </div>
             </div>
         </div>
