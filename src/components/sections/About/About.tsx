@@ -6,7 +6,6 @@ function About() {
     return (
         <div className={styles.about}>
             <div className={styles.header}>
-                <div className={styles.segmentWhite}></div>
                 <div className={styles.segmentYellow}></div>
                 <div className={styles.segmentBlue}></div>
             </div>
@@ -14,10 +13,8 @@ function About() {
                 <AboutUs></AboutUs>
                 <Mision></Mision>
             </div>
-            
         </div>
     )
 }
-
 
 export default About

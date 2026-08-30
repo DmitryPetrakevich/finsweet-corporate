@@ -1,0 +1,22 @@
+.authors {
+    width: 100%;
+    padding: 0 80px;
+    margin-bottom: 125px;
+}
+
+.title {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #232536;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}

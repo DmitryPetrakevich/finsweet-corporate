@@ -5,6 +5,7 @@ import Categorues from './components/sections/Categories/Categories'
 import Hero from "./components/sections/Hero/Hero"
 import Posts from './components/sections/Posts/Posts'
 import SpecialPost from './components/sections/SpecialPost/SpecialPost'
+import Authors from './components/sections/Authors/Authors'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <About></About>
       <Categorues></Categorues>
       <SpecialPost></SpecialPost>
+      <Authors></Authors>
     </div>
   )
 }

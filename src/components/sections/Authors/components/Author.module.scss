@@ -1,0 +1,52 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    flex: 1;
+    background-color: #F4F4F4;
+    border-radius: 3px;
+}
+
+.img {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.name {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #232536;
+}
+
+.job {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #6D6E76;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.social {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.isPrimary {
+    background-color: #FBF6EA;
+}
+
