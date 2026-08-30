@@ -5,6 +5,11 @@ import Mision from "./components/Mision"
 function About() {
     return (
         <div className={styles.about}>
+            <div className={styles.header}>
+                <div className={styles.segmentWhite}></div>
+                <div className={styles.segmentYellow}></div>
+                <div className={styles.segmentBlue}></div>
+            </div>
             <div className={styles.container}>
                 <AboutUs></AboutUs>
                 <Mision></Mision>

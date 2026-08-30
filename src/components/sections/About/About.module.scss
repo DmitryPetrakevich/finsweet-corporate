@@ -4,6 +4,30 @@
     margin-bottom: 125px;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 23px;
+    width: 100%;
+}
+
+.segmentWhite {
+    height: 100%;
+    flex: 1;
+}
+
+.segmentYellow {
+    height: 100%;
+    background-color: #FFD050;
+    flex: 3;
+}
+
+.segmentBlue {
+    height: 100%;
+    background-color: #592EA9;
+    flex: 1;
+}
+
 .container {
     display: flex;
     flex-direction: row;
