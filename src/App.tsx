@@ -8,6 +8,7 @@ import SpecialPost from './components/sections/SpecialPost/SpecialPost'
 import Authors from './components/sections/Authors/Authors'
 import Logos from './components/sections/Logos/Logos'
 import Testimonials from './components/sections/Testimonials/Testimonial'
+import JoinUs from './components/sections/JoinUs/JoinUs'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Authors></Authors>
       <Logos></Logos>
       <Testimonials />
+      <JoinUs></JoinUs>
     </div>
   )
 }
