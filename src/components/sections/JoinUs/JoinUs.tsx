@@ -1,4 +1,4 @@
-import Button from "../../ui/Button"
+import Button from "../../ui/Button/Button"
 import styles from "./JoinUs.module.scss"
 
 function JoinUs() {

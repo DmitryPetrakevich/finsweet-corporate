@@ -1,5 +1,5 @@
 import styles from "./FeaturedPost.module.scss"
-import Button from "../../../ui/Button"
+import Button from "../../../ui/Button/Button"
 
 function FeaturedPost() {
     return (

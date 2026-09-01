@@ -9,6 +9,7 @@ import Authors from './components/sections/Authors/Authors'
 import Logos from './components/sections/Logos/Logos'
 import Testimonials from './components/sections/Testimonials/Testimonial'
 import JoinUs from './components/sections/JoinUs/JoinUs'
+import Footer from './components/layout/Footer/Footer'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Logos></Logos>
       <Testimonials />
       <JoinUs></JoinUs>
+      <Footer></Footer>
     </div>
   )
 }
