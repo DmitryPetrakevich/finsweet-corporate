@@ -38,6 +38,7 @@
     font-family: var(--font-primary);
     background: none;
     color: #FFFFFF;
+    text-decoration: none;
     cursor: pointer;
     transition: all 0.2s ease;
 
@@ -73,7 +74,6 @@
 
     &:hover {
         background-color: #FFD050;
-
     }
 }
 

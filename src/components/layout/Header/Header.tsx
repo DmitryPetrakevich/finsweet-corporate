@@ -1,5 +1,6 @@
 import styles from "./Header.module.scss"
 import logo from "../../../assets/icons/Logo.svg"
+import { NavLink } from "react-router-dom";
 
 function Header() {
     return (
@@ -9,10 +10,21 @@ function Header() {
 
                 <div className={styles.rightBlock}>
                     <div className={styles.nav}>
-                        <button className={styles.navBtn}>Home</button>
-                        <button className={styles.navBtn}>Blog</button>
-                        <button className={styles.navBtn}>About us</button>
-                        <button className={styles.navBtn}>Contact us</button>
+                        <NavLink to="/" className={styles.navBtn}>
+                            Home
+                        </NavLink>
+
+                        <NavLink to="/blog" className={styles.navBtn}>
+                            Blog
+                        </NavLink>
+
+                        <NavLink to="/about" className={styles.navBtn}>
+                            About us
+                        </NavLink>
+
+                        <NavLink to="/contact" className={styles.navBtn}>
+                            Contact us
+                        </NavLink>
                     </div>
 
                     <button className={styles.btnSub}>

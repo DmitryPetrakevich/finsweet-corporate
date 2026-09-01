@@ -1,33 +1,30 @@
 import './App.scss'
+
 import Header from "./components/layout/Header/Header"
-import About from './components/sections/About/About'
-import Categorues from './components/sections/Categories/Categories'
-import Hero from "./components/sections/Hero/Hero"
-import Posts from './components/sections/Posts/Posts'
-import SpecialPost from './components/sections/SpecialPost/SpecialPost'
-import Authors from './components/sections/Authors/Authors'
-import Logos from './components/sections/Logos/Logos'
-import Testimonials from './components/sections/Testimonials/Testimonial'
-import JoinUs from './components/sections/JoinUs/JoinUs'
-import Footer from './components/layout/Footer/Footer'
+import Footer from "./components/layout/Footer/Footer"
+
+import HomePage from "./pages/HomePage/HomePage"
+import BlogPage from "./pages/BlogPage/BlogPage"
+import AboutPage from "./pages/AboutPage/AboutPage"
+import ContactPage from "./pages/ContactPage/ContactPage"
+
+import { Routes, Route } from "react-router-dom"
 
 function App() {
+    return (
+        <div className='app'>
+            <Header />
 
-  return (
-    <div className='app'>
-      <Header></Header>
-      <Hero></Hero>
-      <Posts></Posts>
-      <About></About>
-      <Categorues></Categorues>
-      <SpecialPost></SpecialPost>
-      <Authors></Authors>
-      <Logos></Logos>
-      <Testimonials />
-      <JoinUs></JoinUs>
-      <Footer></Footer>
-    </div>
-  )
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/blog" element={<BlogPage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+
+            <Footer />
+        </div>
+    )
 }
 
 export default App
