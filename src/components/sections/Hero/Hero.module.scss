@@ -1,9 +1,12 @@
+@use "../../../styles/variables.scss" as *;
+
 .hero {
     position: relative;
     background-image: url("../../../assets//images/hero/hero-background.jpg");
     background-size: cover;
     background-position: center;
-    margin-bottom: 130px;
+    margin-bottom: 125px;
+    height: calc(100vh - 80px);
 }
 
 .hero::before {
@@ -17,7 +20,7 @@
 .heroContent {
     position: relative;
     z-index: 1;
-    height: 720px;
+    max-width: 720px;
     max-width: 900px;
     padding-top: 120px;
     padding-left: 80px; 
@@ -98,4 +101,42 @@
 
 .btn:hover {
     background-color: #EDC14A;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .hero {
+        margin-bottom: 80px;
+    }
+
+    .heroContent {
+        padding: 80px 40px;
+    }
+
+    .title {
+        font-size: 38px;
+        line-height: 52px;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .hero {
+        margin-bottom: 40px;
+    }
+
+    .heroContent {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 12зx;
+    }
 }

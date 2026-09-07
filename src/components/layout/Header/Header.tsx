@@ -1,12 +1,17 @@
+import { use, useState } from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss"
 import logo from "../../../assets/icons/Logo.svg"
-import { NavLink } from "react-router-dom";
+import BurgerButton from "./BurgerButton/BurgerButton";
+import MobileMenu from "./MobileMenu/MobileMenu";
 
 function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <div className={styles.header}>
             <div className={styles.container}>
-                <img src={logo} />
+                <img className={styles.logo} src={logo} />
 
                 <div className={styles.rightBlock}>
                     <div className={styles.nav}>
@@ -30,8 +35,19 @@ function Header() {
                     <button className={styles.btnSub}>
                         Subscribe
                     </button>
+
+                    <BurgerButton
+                    
+                    isOpen={isMenuOpen}
+                    onClick={() => setIsMenuOpen(prev => !prev)}
+                    />
                 </div>
             </div>
+
+            <MobileMenu 
+            isOpen={isMenuOpen} 
+            onClose={() => setIsMenuOpen(false)}
+            />
         </div>
     )
 }

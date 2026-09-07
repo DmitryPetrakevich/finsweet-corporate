@@ -1,3 +1,5 @@
+@use "../../../../styles//variables.scss" as *;
+
 .mision {
     display: flex;
     flex-direction: column;
@@ -37,4 +39,23 @@
     line-height: 28px;
     letter-spacing: 0px;
     color: #6D6E76;
+}
+
+@media (max-width: $breakpoint-desktop) {
+    .text {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .description {
+        font-size: 15px;
+        letter-spacing: 0px;
+        margin-bottom: 12px;
+    }
 }

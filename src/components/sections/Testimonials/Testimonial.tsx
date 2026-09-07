@@ -25,7 +25,7 @@ function Testimonials() {
 
           <div className={styles.btnSection}>
             <div className={styles.quoter}>
-              <img src="src\assets\icons\quoter\jonathan-vallem.svg" />
+              <img className={styles.quoterImg}  src="src\assets\icons\quoter\jonathan-vallem.svg" />
 
               <div className={styles.quoterInfo}>
                 <p className={styles.quoterName}>Jonathan Vallem</p>

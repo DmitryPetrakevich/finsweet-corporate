@@ -1,3 +1,5 @@
+@use "../../../../styles//variables.scss" as *;
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -20,7 +22,6 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 48px;
-    letter-spacing: -2px;
     color: #232536;
     margin-bottom: 16px;
     max-width: 475px;
@@ -53,3 +54,24 @@
     background: none;
     cursor: pointer;
 }
+
+@media (max-width: $breakpoint-desktop) {
+    .text {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .description {
+        font-size: 15px;
+        letter-spacing: 0px;
+        margin-bottom: 12px;
+    }
+}
+
+

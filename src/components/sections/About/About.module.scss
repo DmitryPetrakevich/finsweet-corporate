@@ -1,7 +1,9 @@
+@use "../../../styles//variables.scss" as *;
+@use "../../../styles//mixins.scss" as *;
+
 .about {
+    @include section;
     width: 100%;
-    padding: 0 80px;
-    margin-bottom: 125px;
 }
 
 .header {
@@ -31,4 +33,18 @@
     background-color: #F4F0F8;
     padding: 90px 80px;
 }
+
+@media (max-width: $breakpoint-desktop) {
+    .container {
+        flex-direction: column;
+        padding: 45px 40px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .container {
+        padding: 30px 30px;
+    }
+}
+
 

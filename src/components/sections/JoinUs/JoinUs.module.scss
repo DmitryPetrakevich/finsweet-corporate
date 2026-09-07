@@ -1,6 +1,9 @@
+@use "../../../styles//variables.scss" as *;
+@use "../../../styles//mixins.scss" as *;
+
 .joinUs {
     width: 100%;
-    margin-bottom: 125px;
+    @include section;
 }
 
 .container {
@@ -10,7 +13,6 @@
     max-width: 420px;
     width: 100%;
     margin: 0 auto;
-
 }
 
 .title {
@@ -33,4 +35,15 @@
     text-align: center;
     color: #6D6E76;
     margin-bottom: 32px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .description {
+        margin-bottom: 16px;
+    }
 }

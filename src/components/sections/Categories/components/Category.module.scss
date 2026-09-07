@@ -3,6 +3,8 @@
     flex-direction: column;
     border: 1px solid #cbccd2;
     padding: 32px;
+    min-width: 250px;
+    max-width: 300px;
     flex: 1;
 }
 
@@ -44,5 +46,4 @@
 
 .primary {
     background-color: #FFD050;
-
 }

@@ -1,7 +1,9 @@
+@use "../../../styles//variables.scss" as *;
+@use "../../../styles//mixins.scss" as *;
+
 .testimonials {
     width: 100%;
-    padding: 0 80px;
-    margin-bottom: 125px;
+    @include section;
 }
 
 .container {
@@ -11,8 +13,6 @@
     width: 100%;
     background-color: #FBF6EA;
     padding: 90px 120px;
-    padding-right: 0;
-    padding-bottom: 75px;
 }
 
 .leftBlock {
@@ -52,11 +52,9 @@
     max-width: 350px;
 }
 
-
 .rightBlock {
     display: flex;
     flex-direction: column;
-    margin-right: 170px;
 }
 
 .quote {
@@ -79,7 +77,14 @@
 .quoter {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 16px;
+    margin-right: 8px;
+}
+
+.quoterImg {
+    width: 100px;
+    height: 100px;
 }
 
 .quoterInfo {
@@ -150,6 +155,94 @@
 
 .divider {
     width: 1px;
+    margin: 0 20px;
     height: 300px;
     background-color: #a3a4a6;
+}
+
+@media (max-width: $breakpoint-desktop) {
+    .container {
+        padding: 40px 60px;
+    }
+
+    .quoter {
+        // display: flex;
+        // flex-direction: row;
+        // gap: 16px;
+    }
+
+    .quoterImg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .quoterInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quoterName {
+        font-size: 20px;
+    }
+
+    .quoterLocation {
+        font-size: 14px;
+    }
+
+    .btns {
+        gap: 16px;
+    }
+
+    .btnWhite {
+        width: 35px;
+        height: 35px;
+
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .btnBlack {
+        width: 50px;
+        height: 50px;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .leftBlock {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .quote {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .btns {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btnSection {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .divider {
+        display: none;
+    }
 }

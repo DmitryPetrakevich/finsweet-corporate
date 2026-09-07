@@ -1,7 +1,9 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles//mixins.scss" as *;
+
 .specialPost {
     width: 100%;
-    padding: 0 80px;
-    margin-bottom: 125px;
+    @include section;
 }
 
 .container {
@@ -45,7 +47,7 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 64px;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     color: #232536;
     margin-bottom: 15px;
     max-width: 525px;
@@ -64,4 +66,34 @@
 
 .specialButton {
     width: 270px;
+}
+
+@media (max-width: $breakpoint-desktop) {
+    .container {
+        align-items: flex-start;
+        justify-content: flex-start;
+        min-height: 0;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .img {
+        display: none;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .text {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .text {
+        font-size: 26px;
+        line-height: 36px;
+    }
 }

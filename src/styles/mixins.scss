@@ -1,0 +1,39 @@
+@use "./variables" as *;
+
+@mixin section {
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+    margin-bottom: 125px;
+
+    @media (max-width: $breakpoint-tablet) {
+        padding-left: $padding-tablet;
+        padding-right: $padding-tablet;
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        padding-left: $padding-mobile;
+        padding-right: $padding-mobile;
+        // margin-bottom: 60px;
+    }
+}
+
+@mixin sectionTitle {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #232536;
+    margin-bottom: 32px;
+
+    @media (max-width: $breakpoint-mobile) {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+}

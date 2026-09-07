@@ -1,0 +1,30 @@
+@use "../../../../styles//variables.scss" as *;
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+        .span {
+            background-color: rgb(188, 187, 187);
+        }
+
+    }
+}
+
+@media (max-width: $breakpoint-desktop) {
+    .burger {
+        display: flex;
+    }
+}
+
+.span {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}

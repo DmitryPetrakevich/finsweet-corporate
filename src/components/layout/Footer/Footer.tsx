@@ -13,7 +13,7 @@ function Footer() {
         <div className={styles.footer}>
             <div className={styles.container}>
                 <div className={styles.header}>
-                    <img src={logo} />
+                    <img className={styles.logo} src={logo} />
 
                     <div className={styles.nav}>
                         <button className={styles.navBtn}>Home</button>

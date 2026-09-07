@@ -1,3 +1,6 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles//mixins.scss" as *;
+
 .footer {
     width: 100%;
     background-color: #232536;
@@ -6,7 +9,13 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 60px 80px;
+    padding: 60px 0;
+    @include section;
+    margin-bottom: 0;
+}
+
+.logo {
+    max-width: 150px;
 }
 
 .header {
@@ -20,6 +29,7 @@
 .nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -100,4 +110,66 @@
     width: 16px;
     height: 16px;
     filter: invert(1);
+}
+
+@media (max-width: $breakpoint-desktop) {
+    .text {
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -2px;
+        max-width: 900px;   
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 30px;
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .text {
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: -2px;
+    }
+
+    .subscribeArea {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .content {
+        padding: 20px 15px;
+    }
+
+    .text {
+        font-size: 26px; 
+        line-height: 38px;
+        letter-spacing: 0;
+    }
+
+    .bottomBlock {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .socials {
+        align-self: center;
+    }
 }
