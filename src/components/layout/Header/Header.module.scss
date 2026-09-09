@@ -91,6 +91,10 @@
 }
 
 @media (max-width: $breakpoint-mobile) {
+    .header {
+        height: 60px;
+    }
+
     .logo {
         width: 100px;
     }

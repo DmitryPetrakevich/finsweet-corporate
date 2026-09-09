@@ -63,7 +63,6 @@
 }
 
 .img {
-    width: 515px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -72,6 +71,12 @@
 }
 
 @media (max-width: $breakpoint-desktop) {
+    .blogHeader {
+        padding: 40px 0;
+        margin-bottom: 0px;
+        @include section;
+    }
+
     .container {
         flex-direction: column;
     }
@@ -88,12 +93,6 @@
 }
 
 @media (max-width: $breakpoint-tablet) {
-    .blogHeader {
-        padding: 40px 0;
-        margin-bottom: 0px;
-        @include section;
-    }
-
     .text {
         font-size: 30px;
         line-height: 40px;
